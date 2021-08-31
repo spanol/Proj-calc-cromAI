@@ -1,0 +1,9 @@
+* {
+  background-image: url("./perga2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main div#entradas {
+  justify-content: center;
+  padding-top: 10rem;
+}
