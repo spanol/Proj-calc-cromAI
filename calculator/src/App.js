@@ -4,10 +4,10 @@ import "./App.css"
 const App = () =>{
 
   function Calcular_Hipotenusa() {
-   var Cateto_1 = parseInt(document.getElementById('Cateto_1'));
-   var Cateto_2 = parseInt(document.getElementById('Cateto_2'));
-   var Hipotenusa = Math.sqrt(Math.pow(Cateto_1,2)+Math.pow(Cateto_2,2))
-   document.getElementById('Hipotenusa').innerHTML="The Length of hypotenuse is= "+Hipotenusa;
+   var Cateto_1 = parseFloat(document.getElementById('Cateto_1').value);
+   var Cateto_2 = parseFloat(document.getElementById('Cateto_2').value);
+   var Hipotenusa = Math.round(Math.sqrt(Math.pow(Cateto_1,2)+Math.pow(Cateto_2,2)))
+   document.getElementById('Hipotenusa').innerHTML="O valor de sua hipotenusa é= "+Hipotenusa;
   }
 
   
