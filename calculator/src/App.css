@@ -1,34 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   justify-content: center;
+  font-family: "STIX Two Math", serif;
+  overflow-x: hidden;
+}
+/* Html*/
+body {
   background-image: url("./perga2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "STIX Two Math", serif;
+  place-items: center;
+  display: flex;
 }
-
-
-nav {
-  background-color: #0066ff;
-  position: fixed;
+body h1 {
+  font-size: 30px;
+}
+body nav header {
+  position: initial;
   width: 100%;
-  justify-content: center;
-  padding-left: 40%;
+  text-align: center;
   border: transparent;
+  font-size: 20px;
 }
-section#Calculadora {
+body section#Calculadora {
   text-align: center;
   padding: 15%;
-  box-shadow: transparent;
 }
-aside#left {
-  background-color: transparent;
+
+body aside#Esquerda {
   padding: 3rem;
   position: fixed;
   top: 6rem;
   left: 3rem;
-  border-radius: 1rem;
   width: 15rem;
-  box-shadow: transparent;
+}
+
+body footer {
+  display: flex;
+}
+
+footer a#Footer {
+  text-decoration: none;
+  color: #ec3333;
+}
+input::placeholder {
+  text-align: center;
+  font-weight: bold;
+}
+
+body div#Entradas img {
+  width: 40%;
+}
+
+body section#Calculadora div#Entradas input {
+  background-color: transparent;
+  border-radius: 3rem;
+}
+
+body section#Calculadora div#Botões-de-ação button {
+  border-radius: 0.5rem;
+  background-color: transparent;
+  font-size: 1rem;
+  left: 1rem;
+  padding: 5px 5px;
+}
+
+/* Caso a tela tenha resolução menor que 1200px:*/
+@media screen and (min-width: 1200px) {
+  aside#Esquerda {
+    display: none;
+}
 }
